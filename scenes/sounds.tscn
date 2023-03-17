@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://fvuhrjbe0uv7"]
+
+[ext_resource type="AudioStream" uid="uid://hmndemij5soi" path="res://sounds/death_1.wav" id="1_fxnp3"]
+[ext_resource type="AudioStream" uid="uid://duhd3dd054nxs" path="res://sounds/eat_fruit.wav" id="2_xvgrt"]
+[ext_resource type="AudioStream" uid="uid://c7dcivvr2flli" path="res://sounds/eat_ghost.wav" id="3_envxf"]
+[ext_resource type="AudioStream" uid="uid://0rpwxuiojv60" path="res://sounds/power_pellet.wav" id="4_vrkjo"]
+[ext_resource type="AudioStream" uid="uid://bm1jejsqqwcja" path="res://sounds/retreating.wav" id="5_mgv68"]
+
+[node name="sounds" type="Node2D"]
+
+[node name="death" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_fxnp3")
+
+[node name="eat_fruit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_xvgrt")
+
+[node name="eat_ghost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_envxf")
+
+[node name="eat_powerup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_vrkjo")
+
+[node name="frightened_ghosts" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_mgv68")
